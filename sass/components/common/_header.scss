@@ -1,0 +1,130 @@
+
+.page-header {
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    z-index: 9;
+
+}
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: var(--secondary-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-right: 93px;
+}
+
+.logo__first {
+    color: var(--accent-color);
+}
+
+.logo__second {
+    color: #000000;
+}
+
+.main-nav__list {
+    list-style: none;
+    display: flex;
+}
+
+
+.main-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.main-nav__link {
+    position: relative;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    transition: color 250ms var(--time-animation);
+    &::after {
+            position: absolute;
+            bottom: -27px;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+            transform: scaleX(0);
+            transition: opacity 250ms var(--time-animation), transform 250ms var(--time-animation);
+    }
+    &:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+
+.main-nav__link--current::after {
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    content: "";
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: scaleX(1);
+}
+.main-nav__link:hover,
+.main-nav__link:focus,
+.main-nav__link--current {
+    color: var(--accent-color);
+}
+.contact-list {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.contact-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contact-list__link {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms var(--time-animation);
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+}
+
+.contact-list__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}

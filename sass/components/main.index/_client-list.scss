@@ -1,0 +1,30 @@
+.client__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.client__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client__link {
+    display: inline-block;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #afb1b8;
+    width: 100%;
+    height: 100%;
+    padding: 16px 32px;
+    transition: color 250ms var(--time-animation), border-color 250ms var(--time-animation);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+}
+
+.client__icon {
+    fill: currentColor;
+}
