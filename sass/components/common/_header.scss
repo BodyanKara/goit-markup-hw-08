@@ -38,10 +38,32 @@
     color: #000000;
 }
 
+.menu-btn{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &--open .icon-menu {
+        display: none;
+    }
+
+    &--open .icon-close {
+        display: block;
+    }
+}
+
+.menu-btn__icon-close{
+    display: none;
+}
+
 .main-nav__list {
     list-style: none;
     display: flex;
 }
+
+
 
 
 .main-nav__item:not(:last-child) {
