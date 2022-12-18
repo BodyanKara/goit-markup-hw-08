@@ -111,25 +111,6 @@ img {
   align-items: center;
 }
 
-.logo {
-  color: var(--secondary-text-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-right: 93px;
-}
-
-.logo__first {
-  color: var(--accent-color);
-}
-
-.logo__second {
-  color: #000000;
-}
-
 .menu-btn {
   display: inline-block;
   margin: 0;
@@ -205,6 +186,8 @@ img {
 
 .contact-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   margin-left: auto;
 }
@@ -233,6 +216,25 @@ img {
 .contact-list__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.logo {
+  color: var(--secondary-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 93px;
+}
+
+.logo__first {
+  color: var(--accent-color);
+}
+
+.logo__second {
+  color: #000000;
 }
 
 .back-image {
@@ -465,8 +467,8 @@ img {
 }
 
 .client__list {
-  list-style: none;
   display: flex;
+  list-style: none;
   justify-content: center;
 }
 
