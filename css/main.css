@@ -186,7 +186,6 @@ img {
 
 .contact-list {
   display: flex;
-  flex-direction: column;
   align-items: center;
   list-style: none;
   margin-left: auto;
