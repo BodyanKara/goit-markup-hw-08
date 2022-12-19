@@ -17,43 +17,47 @@
 <body>
     
     <!--Шапка-->
-    <header class="page-header">
-        <div class="container  main-nav">
+    <header class="page-header  ">
+        <div class="   container page-header__container">
             <nav class=" main-nav ">
                 <a href="./index.html" class="logo"><span class="logo__first">Web</span><span
                         class="logo__second">Studio</span></a>
                 <button type="button" class="menu-btn menu-btn--open">
-                    <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                         <use href="./images/basic/adaptive.svg#close-btn" class="menu-btn__icon-close"></use>
                         <use href="./images/basic/adaptive.svg#menu-btn" class="menu-btn__icon-menu"></use>
                     </svg>
                 </button>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="./index.html" class="main-nav__link main-nav__link--current">Студія</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="./portfolio.html" class="main-nav__link ">Портфоліо</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="" class="main-nav__link">Контакти</a>
-                    </li>
-                </ul>
+                <div class="drop-menu">
+                    <!-- <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="./index.html" class="main-nav__link main-nav__link--current">Студія</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="./portfolio.html" class="main-nav__link ">Портфоліо</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="" class="main-nav__link">Контакти</a>
+                        </li>
+                    </ul>
+                    <ul class="contact-list ">
+                        <li class="contact-list__item">
+                            <a href="mailto:info@devstudio.com" class="contact-list__link"><svg width="16" height="12"
+                                    class="contact-list__icon">
+                                    <use href="./images/basic/symbol-defs.svg#mail"></use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="contact-list__item">
+                            <a href="tel:+380961111111" class="contact-list__link"><svg width="10" height="16" class="contact-list__icon">
+                                    <use href="./images/basic/symbol-defs.svg#phone"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul> -->
+                    
+                </div>
             </nav>
-            <ul class="contact-list ">
-                <li class="contact-list__item">
-                    <a href="mailto:info@devstudio.com" class="contact-list__link"><svg width="16" height="12"
-                            class="contact-list__icon">
-                            <use href="./images/basic/symbol-defs.svg#mail"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="contact-list__item">
-                    <a href="tel:+380961111111" class="contact-list__link"><svg width="10" height="16"
-                            class="contact-list__icon">
-                            <use href="./images/basic/symbol-defs.svg#phone"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+            
+            
         </div>
     </header>
     <!--Контент-->
@@ -461,12 +465,5 @@
                 });
     </script>
     
-    <script>
-        const { height: pageHeaderHeight } = document
-            .querySelector(".page-header")
-            .getBoundingClientRect();
-        document.body.style.paddingTop = `${pageHeaderHeight}px`
-    </script>
-    <script src="./js/modal.js"></script>
 </body>
 </html>

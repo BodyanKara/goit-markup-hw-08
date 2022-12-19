@@ -1,0 +1,158 @@
+.hero {
+    background-color: #2F303A;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    
+    font-weight: 900;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+    }
+
+}
+
+.hero__btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: 0;
+    transition: background-color 250ms var(--time-animation);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        color: #FFFFFF;
+    }
+}
+
+.back-image {
+    padding: 118px 0;
+    margin: 0 auto;
+    max-width: 1600px;
+    
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2F303A;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/basic/baner/hi-banner__bg_1x_480w.jpg);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/basic/baner/hi-banner__bg_1x_480w.webp);
+    
+    @include bg-2x {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/basic/baner/hi-banner__bg_2x_480w.jpg);
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/basic/baner/hi-banner__bg_2x_480w.webp);
+    }
+    
+    @include bg-3x {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/basic/baner/hi-banner__bg_3x_480w.jpg);
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/basic/baner/hi-banner__bg_3x_480w.webp);
+    }
+    
+    @media screen and (min-width: 480px) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/basic/baner/hi-banner__bg_1x_768w.jpg);
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/basic/baner/hi-banner__bg_1x_768w.webp);
+    
+        @include bg-2x {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/basic/baner/hi-banner__bg_2x_768w.jpg);
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/basic/baner/hi-banner__bg_2x_768w.webp);
+        }
+
+        @include bg-3x {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/basic/baner/hi-banner__bg_3x_768w.jpg);
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/basic/baner/hi-banner__bg_3x_768w.webp);
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/basic/baner/hi-banner__bg_1x_1200w.jpg);
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/basic/baner/hi-banner__bg_1x_1200w.webp);
+
+        @include bg-2x {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/basic/baner/hi-banner__bg_2x_1200w.jpg);
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/basic/baner/hi-banner__bg_2x_1200w.webp);
+        }
+    
+        @include bg-3x {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/basic/baner/hi-banner__bg_3x_1200w.jpg);
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/basic/baner/hi-banner__bg_3x_1200w.webp);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding: 200px 0;
+        }
+    }
+}
+

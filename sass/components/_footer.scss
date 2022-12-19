@@ -5,8 +5,20 @@
 }
 
 .main-contact {
-    display: flex;
-    align-items: baseline;
+    
+    text-align: center;
+    
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+    }
 }
 
 .logo--inverse {
@@ -33,6 +45,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    
+    @media screen and(max-width:768px) {
+        margin-bottom: 60px;
+        
+    }
 }
 
 .connection__location {
@@ -54,7 +71,19 @@
 
 /* Приєднуйтесь */
 .social {
-    margin-left: 93px;
+    text-align: center;
+    @media screen and(max-width:767px) {
+        margin-bottom: 60px;
+    }
+    
+    @media screen and(max-width:768px) {
+        
+    }
+    
+    @media screen and(min-width:1200px) {
+        margin-left: 93px;
+    }
+    
 }
 
 .footer-form__title,
@@ -73,6 +102,7 @@
 .social__list {
     list-style: none;
     display: flex;
+    justify-content: center;
 }
 
 .social__item {
@@ -106,15 +136,21 @@
 }
 
 .footer-form {
-    margin-left: auto;
-    width: 570px;
+    text-align: center;
+    display: block;
+
+    @media screen and(max-width:768px) {
+        margin-bottom: 60px;
+    }
+    
 }
 
 
 .footer-form__input {
+    margin-bottom: 20px;
     padding: 15px 12px;
     height: 50px;
-    width: 358px;
+    width: 100%;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
