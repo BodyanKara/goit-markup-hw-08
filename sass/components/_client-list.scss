@@ -5,16 +5,21 @@
     flex-wrap: wrap;
 }
 .client__item{
-    width: calc((100% - 60px)/2);
+    
     margin-right: 30px;
-    
-    &:nth-child(2n) {
-        margin-right: 0;
+    @media screen and (max-width:768px px){
+        width: calc((100% - 60px)/2);
+        
+        &:nth-child(2n) {
+                margin-right: 0;
+        }
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 30px;
+        }
     }
     
-    &:not(:nth-last-child(-n+2)) {
-        margin-bottom: 30px;
-    }
+    
+    
     @media screen and (min-width: 768px) {
         width: calc((100% - 90px)/3);
 
